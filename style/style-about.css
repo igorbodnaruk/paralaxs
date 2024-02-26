@@ -1,0 +1,107 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    font-size: 20px;
+    z-index: 2;
+}
+header nav{
+    margin-right: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+header nav a::before{
+    content: "";
+    width: 0%;
+    height: 2.6px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    transition: .3s;
+}
+header nav a:hover::before{
+    left: 0;
+    width: 100%;
+}
+.active::before{
+    width: 100%;
+}
+.Home{
+    background-image: url(./../img/background.png);
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home h1{
+    position: absolute;
+    font-size: 60px;
+    z-index: 2;
+}
+.Home img{
+    position: absolute;
+}
+.frontMountain{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.backMountain{
+    width: 44%;
+    left: 30%;
+    top: 36%;
+}
+.rightCloud{
+    right: 150px;
+    top: 90px;
+    width: 300px;
+}
+.rightCloud-2{
+    right: 70px;
+    top: 180px;
+    width: 200px;
+}
+.leftCloud{
+    left: 70px;
+    top: 180px;
+    width: 200px;
+}
+.About{
+    z-index: 2;
+    background-color: #7acfa5;
+    padding: 60px 120px;
+}
+.About h1{
+    font-size: 40px;
+}
+.About p{
+    font-size: 20px;
+    margin: 40px 0px;
+}
